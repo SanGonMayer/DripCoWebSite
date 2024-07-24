@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset='utf-8'>
+    <meta name="keywords" content="">
+    <meta name="robots" content="index">
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <title>DripCo</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+</head>
+
+    <link rel="icon" href="dripco-high-resolution-logo-white-on-black-background.ico">    
+
+<body>
+    <header>
+        <div class="logo">
+            <img src="dripco-high-resolution-logo-white-on-black-background.png" alt="Logo de la marca">
+        </div>
+        <div class="categorias">
+            <a href="#">Inicio</a>
+            <a href="#">Productos</a>
+            <a href="#contacto">Contacto</a>
+            <a href="#">Mi Cuenta</a>
+        </div>
+        <div class="busqueda">
+            <input type="text" placeholder="Buscar...">
+            <img src="329014.png" alt="Lupa">
+        </div>
+
+        <div class="carrito">
+            <a href="#"><img src="267334.png" alt="Mi carrito"></a>
+        </div>
+    </header>
+    
+    <div class="logo-container">
+        <img src="D:\DOCUMENTOS\Desarrollo Web\DripCo\Generic-web-page\giphy.gif" alt="DripCo Logo" class="gif-logo">
+    </div>
+    
+    <div class="contenido">
+        <ul class="lista_productos">
+            <div class="producto1">
+            <li>
+              <h3>Producto 1</h3>
+              <img src="piet-remera-negra-cuadrado-blanco-01.jpg" alt="Remera 1">
+              <p>Descripción del producto 1.</p>
+              <p>Precio: $99.99</p>
+              <button>Comprar</button>
+            </li>
+            </div>
+
+            <div class="producto2">
+            <li>
+              <h3>Producto 2</h3>
+              <img src="298612-800-auto.jpg" alt="Remera 2">
+              <p>Descripción del producto 2.</p>
+              <p>Precio: $49.99</p>
+              <button>Comprar</button>
+            </li>
+            </div>
+
+            <div class="producto3">
+            <li>
+              <h3>Producto 3</h3>
+              <img src="000000000001757037365remera-naranja-segutecnica.png" alt="Remera 3">
+              <p>Descripción del producto 3.</p>
+              <p>Precio: $149.99</p>
+              <button>Comprar</button>
+            </li>
+            </div>
+          </ul>
+    </div>
+    
+    <div class="contacto" id="contacto">
+        <div class="mapa" id="map"></div>
+        <div class="informacion-contacto">
+            <h2>Contactanos</h2>
+            <p>Instagram: <a href="https://www.instagram.com/dripco.wear/" target="_blank">@dripco.wear</a></p>
+            <p>Correo: <a href="mailto:contacto@dripco.com">contacto@dripco.com</a></p>
+            <p>Teléfono: 123-456-7890</p>
+        </div>
+    </div>
+
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

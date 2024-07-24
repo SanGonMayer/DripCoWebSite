@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formulario de registro</title>
+    <style>
+      label {
+        display: block;
+        margin-bottom: 10px;
+      }
+      input[type="email"],
+      input[type="password"] {
+        padding: 10px;
+        border-radius: 5px;
+        border: 1px solid #ccc;
+        margin-bottom: 20px;
+        width: 100%;
+      }
+      .toggle-password {
+        margin-left: 10px;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Formulario de registro</h1>
+    <form>
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required />
+
+      <label for="password">Contraseña:</label>
+      <div>
+        <input type="password" id="password" name="password" required />
+        <span class="toggle-password" onclick="togglePasswordVisibility()">Mostrar</span>
+      </div>
+
+      <button type="submit">Registrarse</button>
+    </form>
+
+    <script>
+      function togglePasswordVisibility() {
+        const passwordInput = document.getElementById("password");
+        const toggleButton = document.querySelector(".toggle-password");
+        if (passwordInput.type === "password") {
+          passwordInput.type = "text";
+          toggleButton.textContent = "Ocultar";
+        } else {
+          passwordInput.type = "password";
+          toggleButton.textContent = "Mostrar";
+        }
+      }
+    </script>
+  </body>
+</html>
